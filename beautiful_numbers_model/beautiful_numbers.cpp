@@ -24,7 +24,7 @@ std::size_t beautiful_numbers::calculate_capacity(std::size_t base, std::size_t 
     std::size_t max_digits {(std::numeric_limits<std::size_t>::max() - 1) / (base - 1)};
     if ((digits < 1) || (digits > max_digits))
     {
-        throw std::invalid_argument("beautiful_numbers: 'beautiful_digits' value MUST be in range [1,"
+        throw std::invalid_argument("beautiful_numbers: 'digits' value MUST be in range [1,"
                                     + std::to_string(digits) + "].");
     }
     return ((base - 1) * digits) + 1;

@@ -33,7 +33,7 @@ void output_calculation_for(std::size_t base, std::size_t digits)
     for (std::size_t iteration = 1; iteration < digits; ++iteration)
     {
         bn.iterate();
-        std::cout << std::setw(2) << (iteration + 1) << ": " << bn.counters()
+        std::cout << std::setw(2) << bn.iteration() << ": " << bn.counters()
                   << "; sum = " << bn.calculate_sum() << std::endl;
     }
 

@@ -9,7 +9,7 @@
 x86/
 x64/
 
-*-debug/
-*-release/
+*-[Dd]ebug/
+*-[Rr]elease/
 
 /data/
